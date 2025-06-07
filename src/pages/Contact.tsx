@@ -50,8 +50,8 @@ const Contact = () => {
                   <div className="text-2xl mr-4">📍</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Location</h3>
-                    <p className="text-gray-600">London, United Kingdom</p>
-                    <p className="text-sm text-gray-500">Serving clients nationwide</p>
+                    <p className="text-gray-600">72 Dalziel Tower, Dalziel Estate, Motherwell</p>
+                    <p className="text-sm text-gray-500">Our office location</p>
                   </div>
                 </div>
               </div>

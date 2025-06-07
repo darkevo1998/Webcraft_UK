@@ -80,7 +80,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-xl mr-2">📍</span>
-                <span>London, United Kingdom</span>
+                <span>72 Dalziel Tower, Dalziel Estate, Motherwell</span>
               </li>
               <li className="flex items-start">
                 <span className="text-xl mr-2">📞</span>

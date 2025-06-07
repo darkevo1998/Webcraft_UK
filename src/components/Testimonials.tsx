@@ -3,7 +3,7 @@ import React from 'react';
 const testimonials = [
   {
     name: 'Sarah Johnson',
-    company: 'Boutique London',
+    company: 'Boutique',
     text: 'DRGAF transformed our online presence. The new website is beautiful, easy to use, and has significantly increased our online sales.',
     image: '👩'
   },
