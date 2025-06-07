@@ -23,22 +23,22 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-tesco-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-tesco-3xl md:text-tesco-4xl font-tesco-bold text-tesco-blue-primary mb-4">What Our Clients Say</h2>
+          <p className="text-tesco-xl text-tesco-gray-dark max-w-2xl mx-auto font-tesco-normal">
             Don't just take our word for it - hear from our satisfied clients
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-8">
+            <div key={index} className="bg-tesco-gray-light rounded-tesco p-8 shadow-tesco">
               <div className="text-4xl mb-4">{testimonial.image}</div>
-              <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
+              <p className="text-tesco-base text-tesco-gray-dark mb-6 italic font-tesco-normal">"{testimonial.text}"</p>
               <div>
-                <p className="font-bold text-gray-900">{testimonial.name}</p>
-                <p className="text-gray-600">{testimonial.company}</p>
+                <p className="font-tesco-bold text-tesco-blue-primary">{testimonial.name}</p>
+                <p className="text-tesco-base text-tesco-gray-dark font-tesco-normal">{testimonial.company}</p>
               </div>
             </div>
           ))}

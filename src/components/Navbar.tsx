@@ -16,16 +16,16 @@ const Navbar = () => {
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg' : 'bg-white'
+      isScrolled ? 'bg-tesco-white shadow-tesco' : 'bg-tesco-blue-primary'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-3">
             <span className="text-3xl">🌐</span>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-gray-900">DRGAF</span>
-              <span className="text-sm text-gray-600">Building Digital Excellence</span>
+              <span className={`text-2xl font-tesco-bold ${isScrolled ? 'text-tesco-blue-primary' : 'text-tesco-white'}`}>DRGAF</span>
+              <span className={`text-tesco-sm font-tesco-normal ${isScrolled ? 'text-tesco-gray-dark' : 'text-tesco-white'}`}>Building Digital Excellence</span>
             </div>
           </NavLink>
           
@@ -37,10 +37,10 @@ const Navbar = () => {
                   to="/"
                   end
                   className={({isActive}) => 
-                    `text-base font-medium transition-colors duration-200 ${
+                    `text-tesco-base font-tesco-medium transition-colors duration-200 ${
                       isActive 
-                        ? 'text-blue-600 border-b-2 border-blue-600'
-                        : 'text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600'
+                        ? 'text-tesco-red border-b-2 border-tesco-red'
+                        : `${isScrolled ? 'text-tesco-gray-dark' : 'text-tesco-white'} hover:text-tesco-red hover:border-b-2 hover:border-tesco-red`
                     }`
                   }
                 >
@@ -51,10 +51,10 @@ const Navbar = () => {
                 <NavLink
                   to="/about"
                   className={({isActive}) => 
-                    `text-base font-medium transition-colors duration-200 ${
+                    `text-tesco-base font-tesco-medium transition-colors duration-200 ${
                       isActive 
-                        ? 'text-blue-600 border-b-2 border-blue-600'
-                        : 'text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600'
+                        ? 'text-tesco-red border-b-2 border-tesco-red'
+                        : `${isScrolled ? 'text-tesco-gray-dark' : 'text-tesco-white'} hover:text-tesco-red hover:border-b-2 hover:border-tesco-red`
                     }`
                   }
                 >
@@ -65,10 +65,10 @@ const Navbar = () => {
                 <NavLink
                   to="/contact"
                   className={({isActive}) => 
-                    `text-base font-medium transition-colors duration-200 ${
+                    `text-tesco-base font-tesco-medium transition-colors duration-200 ${
                       isActive 
-                        ? 'text-blue-600 border-b-2 border-blue-600'
-                        : 'text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600'
+                        ? 'text-tesco-red border-b-2 border-tesco-red'
+                        : `${isScrolled ? 'text-tesco-gray-dark' : 'text-tesco-white'} hover:text-tesco-red hover:border-b-2 hover:border-tesco-red`
                     }`
                   }
                 >
@@ -78,7 +78,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/contact"
-                  className="inline-block px-8 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
+                  className="inline-block px-8 py-3 bg-tesco-red text-tesco-white text-tesco-base font-tesco-semibold rounded-tesco hover:bg-opacity-90 transition-all duration-200 transform hover:scale-105"
                 >
                   Get Started
                 </a>
@@ -88,28 +88,30 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            className={`md:hidden p-2 rounded-tesco hover:bg-opacity-10 transition-colors duration-200 ${
+              isScrolled ? 'hover:bg-tesco-gray-dark' : 'hover:bg-tesco-white'
+            }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            <div className="w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-200"></div>
-            <div className="w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-200"></div>
-            <div className="w-6 h-0.5 bg-gray-700 transition-all duration-200"></div>
+            <div className={`w-6 h-0.5 ${isScrolled ? 'bg-tesco-gray-dark' : 'bg-tesco-white'} mb-1.5 transition-all duration-200`}></div>
+            <div className={`w-6 h-0.5 ${isScrolled ? 'bg-tesco-gray-dark' : 'bg-tesco-white'} mb-1.5 transition-all duration-200`}></div>
+            <div className={`w-6 h-0.5 ${isScrolled ? 'bg-tesco-gray-dark' : 'bg-tesco-white'} transition-all duration-200`}></div>
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div className="md:hidden py-4 border-t border-tesco-gray-light">
             <nav className="flex flex-col space-y-4">
               <NavLink
                 to="/"
                 end
                 className={({isActive}) => 
-                  `px-4 py-3 rounded-lg font-medium ${
+                  `px-4 py-3 rounded-tesco text-tesco-base font-tesco-medium ${
                     isActive 
-                      ? 'bg-blue-50 text-blue-600' 
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? 'bg-tesco-blue-secondary text-tesco-white' 
+                      : 'text-tesco-gray-dark hover:bg-tesco-gray-light'
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -119,10 +121,10 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className={({isActive}) => 
-                  `px-4 py-3 rounded-lg font-medium ${
+                  `px-4 py-3 rounded-tesco text-tesco-base font-tesco-medium ${
                     isActive 
-                      ? 'bg-blue-50 text-blue-600' 
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? 'bg-tesco-blue-secondary text-tesco-white' 
+                      : 'text-tesco-gray-dark hover:bg-tesco-gray-light'
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -132,10 +134,10 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 className={({isActive}) => 
-                  `px-4 py-3 rounded-lg font-medium ${
+                  `px-4 py-3 rounded-tesco text-tesco-base font-tesco-medium ${
                     isActive 
-                      ? 'bg-blue-50 text-blue-600' 
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? 'bg-tesco-blue-secondary text-tesco-white' 
+                      : 'text-tesco-gray-dark hover:bg-tesco-gray-light'
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -144,7 +146,7 @@ const Navbar = () => {
               </NavLink>
               <a
                 href="/contact"
-                className="mx-4 px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-all duration-200 text-center"
+                className="mx-4 px-6 py-3 bg-tesco-red text-tesco-white text-tesco-base font-tesco-semibold rounded-tesco hover:bg-opacity-90 transition-all duration-200 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Started

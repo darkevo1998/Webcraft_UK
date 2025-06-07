@@ -11,7 +11,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col">
+        <div className="min-h-screen bg-tesco-white flex flex-col">
           <Navbar />
           <main className="flex-1 flex flex-col pt-16">
             <Routes>

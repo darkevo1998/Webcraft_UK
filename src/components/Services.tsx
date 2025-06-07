@@ -29,29 +29,29 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-tesco-gray-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-tesco-3xl md:text-tesco-4xl font-tesco-bold text-tesco-blue-primary mb-4">Our Services</h2>
+          <p className="text-tesco-xl text-tesco-gray-dark max-w-2xl mx-auto font-tesco-normal">
             Comprehensive web solutions tailored to your business needs
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group">
+            <div key={index} className="bg-tesco-white rounded-tesco shadow-tesco overflow-hidden hover:shadow-lg transition group">
               <div className="relative h-48">
                 <img 
                   src={service.image} 
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-tesco-blue-primary/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-4xl">{service.icon}</div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-tesco-xl font-tesco-bold text-tesco-blue-primary mb-3">{service.title}</h3>
+                <p className="text-tesco-base text-tesco-gray-dark font-tesco-normal">{service.description}</p>
               </div>
             </div>
           ))}
