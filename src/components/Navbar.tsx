@@ -24,7 +24,7 @@ const Navbar = () => {
           <NavLink to="/" className="flex items-center space-x-3">
             <span className="text-3xl">🌐</span>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-gray-900">WebCraft UK</span>
+              <span className="text-2xl font-bold text-gray-900">DRGAF</span>
               <span className="text-sm text-gray-600">Building Digital Excellence</span>
             </div>
           </NavLink>

@@ -13,8 +13,8 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | WebCraft UK</title>
-        <meta name="description" content="Contact WebCraft UK for modern, responsive website building services. Get in touch for a quote or more information." />
+        <title>Contact Us | DRGAF</title>
+        <meta name="description" content="Contact DRGAF for modern, responsive website building services. Get in touch for a quote or more information." />
       </Helmet>
 
       <PageHeader 

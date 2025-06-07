@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <span className="text-2xl">🌐</span>
-              <span className="text-xl font-bold text-white">WebCraft UK</span>
+              <span className="text-xl font-bold text-white">DRGAF</span>
             </div>
             <p className="text-gray-400 mb-4">
               Building beautiful, responsive websites for UK businesses. Modern designs, seamless functionality, and ongoing support.
@@ -97,7 +97,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; {currentYear} WebCraft UK. All rights reserved.
+            &copy; {currentYear} DRGAF. All rights reserved.
           </p>
         </div>
       </div>

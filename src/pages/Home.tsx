@@ -7,8 +7,8 @@ import Testimonials from '../components/Testimonials';
 const Home = () => (
   <>
     <Helmet>
-      <title>WebCraft UK | Premium Website Building Services</title>
-      <meta name="description" content="WebCraft UK offers modern, responsive website building services for UK customers. £1000 per website plus £50-200 per month for hosting, domain, email, and more." />
+      <title>DRGAF | Premium Website Building Services</title>
+      <meta name="description" content="DRGAF offers modern, responsive website building services for UK customers. £1000 per website plus £50-200 per month for hosting, domain, email, and more." />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Helmet>
     <Hero />

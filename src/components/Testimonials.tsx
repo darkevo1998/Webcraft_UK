@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     company: 'Boutique London',
-    text: 'WebCraft UK transformed our online presence. The new website is beautiful, easy to use, and has significantly increased our online sales.',
+    text: 'DRGAF transformed our online presence. The new website is beautiful, easy to use, and has significantly increased our online sales.',
     image: '👩'
   },
   {

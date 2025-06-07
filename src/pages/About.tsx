@@ -34,8 +34,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | WebCraft UK</title>
-        <meta name="description" content="Learn about WebCraft UK, our mission, and our commitment to building modern, responsive websites for UK businesses." />
+        <title>About Us | DRGAF</title>
+        <meta name="description" content="Learn about DRGAF, our mission, and our commitment to building modern, responsive websites for UK businesses." />
       </Helmet>
       
       <PageHeader 
@@ -48,7 +48,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              WebCraft UK: Your Trusted Web Development Partner
+              DRGAF: Your Trusted Web Development Partner
             </h2>
             <p className="text-xl text-gray-600">
               We are a UK-based web development company dedicated to transforming businesses through meticulously crafted websites, proactive communication, and a commitment to finding effective solutions. We envision every project as an opportunity to build lasting value and create digital spaces that inspire.
