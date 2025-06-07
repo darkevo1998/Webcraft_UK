@@ -88,7 +88,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-xl mr-2">✉️</span>
-                <span className="text-tesco-base text-tesco-gray-light font-tesco-normal">info@webcraftuk.com</span>
+                <span className="text-tesco-base text-tesco-gray-light font-tesco-normal">Support@drgaf.co.uk</span>
               </li>
             </ul>
           </div>
