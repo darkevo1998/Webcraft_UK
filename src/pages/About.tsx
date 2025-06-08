@@ -34,8 +34,17 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | DRGAF</title>
-        <meta name="description" content="Learn about DRGAF, our mission, and our commitment to building modern, responsive websites for UK businesses." />
+        <title>About DRGAF | UK's Trusted Web Development Company</title>
+        <meta name="description" content="Learn about DRGAF, a leading UK web development company. We specialize in creating modern, responsive websites with a focus on quality, transparency, and customer satisfaction." />
+        <meta name="keywords" content="UK web development company, about DRGAF, web design agency, responsive websites, UK web developers" />
+        <meta property="og:title" content="About DRGAF | UK's Trusted Web Development Company" />
+        <meta property="og:description" content="Learn about DRGAF, a leading UK web development company. We specialize in creating modern, responsive websites with a focus on quality, transparency, and customer satisfaction." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://drgaf.co.uk/about" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About DRGAF | UK's Trusted Web Development Company" />
+        <meta name="twitter:description" content="Learn about DRGAF, a leading UK web development company. We specialize in creating modern, responsive websites with a focus on quality, transparency, and customer satisfaction." />
+        <link rel="canonical" href="https://drgaf.co.uk/about" />
       </Helmet>
       
       <PageHeader 

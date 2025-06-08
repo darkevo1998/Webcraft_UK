@@ -7,9 +7,17 @@ import Testimonials from '../components/Testimonials';
 const Home = () => (
   <>
     <Helmet>
-      <title>DRGAF | Premium Website Building Services</title>
-      <meta name="description" content="DRGAF offers modern, responsive website building services for UK customers. £1000 per website plus £50-200 per month for hosting, domain, email, and more." />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>DRGAF | Professional Website Development Services in UK</title>
+      <meta name="description" content="Transform your online presence with DRGAF's expert website development services. Modern designs, responsive layouts, and ongoing support. Starting at £1000 with monthly maintenance options." />
+      <meta name="keywords" content="website development, web design, UK web developer, responsive websites, business websites" />
+      <meta property="og:title" content="DRGAF | Professional Website Development Services in UK" />
+      <meta property="og:description" content="Transform your online presence with DRGAF's expert website development services. Modern designs, responsive layouts, and ongoing support." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://drgaf.co.uk" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="DRGAF | Professional Website Development Services in UK" />
+      <meta name="twitter:description" content="Transform your online presence with DRGAF's expert website development services. Modern designs, responsive layouts, and ongoing support." />
+      <link rel="canonical" href="https://drgaf.co.uk" />
     </Helmet>
     <Hero />
     <Services />

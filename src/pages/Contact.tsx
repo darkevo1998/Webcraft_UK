@@ -67,8 +67,17 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | DRGAF</title>
-        <meta name="description" content="Contact DRGAF for modern, responsive website building services. Get in touch for a quote or more information." />
+        <title>Contact DRGAF | Get a Free Website Development Quote</title>
+        <meta name="description" content="Contact DRGAF for professional website development services. Get a free quote for your project. Call us at +44 08003317779 or fill out our contact form for a quick response." />
+        <meta name="keywords" content="contact DRGAF, website development quote, UK web developer contact, free consultation" />
+        <meta property="og:title" content="Contact DRGAF | Get a Free Website Development Quote" />
+        <meta property="og:description" content="Contact DRGAF for professional website development services. Get a free quote for your project. Call us at +44 08003317779 or fill out our contact form for a quick response." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://drgaf.co.uk/contact" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact DRGAF | Get a Free Website Development Quote" />
+        <meta name="twitter:description" content="Contact DRGAF for professional website development services. Get a free quote for your project. Call us at +44 08003317779 or fill out our contact form for a quick response." />
+        <link rel="canonical" href="https://drgaf.co.uk/contact" />
       </Helmet>
 
       <PageHeader 
