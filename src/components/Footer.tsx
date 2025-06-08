@@ -84,7 +84,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-xl mr-2">📞</span>
-                <span className="text-tesco-base text-tesco-gray-light font-tesco-normal">+44 123 456 7890</span>
+                <span className="text-tesco-base text-tesco-gray-light font-tesco-normal">+44 08003317779</span>
               </li>
               <li className="flex items-start">
                 <span className="text-xl mr-2">✉️</span>

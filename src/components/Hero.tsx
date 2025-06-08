@@ -21,8 +21,8 @@ const Hero = () => {
             <a href="/contact" className="inline-block px-8 py-4 bg-tesco-red text-tesco-white text-tesco-lg font-tesco-semibold rounded-tesco shadow-tesco hover:bg-opacity-90 transition text-center">
               Start Your Project
             </a>
-            <a href="tel:+441234567890" className="inline-block px-8 py-4 bg-tesco-white text-tesco-blue-primary text-tesco-lg font-tesco-semibold rounded-tesco shadow-tesco hover:bg-tesco-gray-light transition text-center">
-              Call Us: +44 123 456 7890
+update            <a href="tel:+4408003317779" className="inline-block px-8 py-4 bg-tesco-white text-tesco-blue-primary text-tesco-lg font-tesco-semibold rounded-tesco shadow-tesco hover:bg-tesco-gray-light transition text-center">
+              Call Us: +44 08003317779
             </a>
           </div>
         </div>
