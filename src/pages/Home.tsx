@@ -35,7 +35,7 @@ const Home = () => (
             </div>
             <h3 className="text-tesco-2xl font-tesco-bold text-tesco-blue-primary mb-4">Website Development</h3>
             <div className="flex items-baseline justify-center mb-6">
-              <span className="text-tesco-4xl font-tesco-bold text-tesco-blue-primary">£1000</span>
+              <span className="text-tesco-4xl font-tesco-bold text-tesco-blue-primary">£999</span>
             </div>
             <ul className="text-left text-tesco-gray-dark space-y-4 mb-8">
               <li className="flex items-start">
@@ -67,8 +67,8 @@ const Home = () => (
             </div>
             <h3 className="text-tesco-2xl font-tesco-bold text-tesco-blue-primary mb-4">Ongoing Support</h3>
             <div className="flex items-baseline justify-center mb-6">
-              <span className="text-tesco-4xl font-tesco-bold text-tesco-blue-primary">£50</span>
-              <span className="text-tesco-base text-tesco-gray-dark ml-2">- £200</span>
+              <span className="text-tesco-4xl font-tesco-bold text-tesco-blue-primary">£49</span>
+              <span className="text-tesco-base text-tesco-gray-dark ml-2">- £199</span>
               <span className="text-tesco-sm text-tesco-gray-dark ml-2">/month</span>
             </div>
             <ul className="text-left text-tesco-gray-dark space-y-4 mb-8">
