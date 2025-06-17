@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import PageHeader from '../components/PageHeader';
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS
+emailjs.init("PmAf-7UWDf9wN4xD_");
 
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -12,6 +17,7 @@ const Contact = () => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -24,43 +30,44 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setIsLoading(true);
     
     try {
-      // Here you would typically integrate with your email service
-      // For example, using EmailJS, SendGrid, or your own backend API
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          to: 'Support@drgaf.co.uk',
-          from: formData.email,
-          subject: `New Contact Form Submission from ${formData.firstName} ${formData.lastName}`,
-          text: `
-            Name: ${formData.firstName} ${formData.lastName}
-            Phone: ${formData.phone}
-            Email: ${formData.email}
-            Message: ${formData.message}
-          `,
-        }),
-      });
+      if (!form.current) return;
 
-      if (!response.ok) {
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: 'sales@drgaf.co.uk',
+        to_email: 'sales@drgaf.co.uk',
+        phone: formData.phone,
+        message: formData.message,
+        to_name: 'DRGAF Sales',
+        reply_to: formData.email
+      };
+
+      const result = await emailjs.send(
+        'service_j0vfm8t',
+        'template_zj5lpyb',
+        templateParams
+      );
+
+      if (result.status === 200) {
+        setSubmitted(true);
+        setFormData({
+          firstName: '',
+          lastName: '',
+          phone: '',
+          email: '',
+          message: ''
+        });
+      } else {
         throw new Error('Failed to send message');
       }
-
-      setSubmitted(true);
-      setFormData({
-        firstName: '',
-        lastName: '',
-        phone: '',
-        email: '',
-        message: ''
-      });
     } catch (err) {
-      setError('Failed to send message. Please try again later.');
       console.error('Error sending message:', err);
+      setError('Failed to send message. Please try again later.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -129,7 +136,7 @@ const Contact = () => {
                   <p>We'll get back to you within 24 hours.</p>
                 </div>
               ) : (
-                <form className="space-y-6" onSubmit={handleSubmit}>
+                <form ref={form} className="space-y-6" onSubmit={handleSubmit}>
                   {error && (
                     <div className="bg-red-50 text-red-700 p-4 rounded-lg">
                       <p>{error}</p>
@@ -199,9 +206,10 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full py-3 px-6 bg-tesco-blue-primary text-tesco-white font-tesco-semibold rounded-tesco hover:bg-tesco-blue-secondary transition"
+                    disabled={isLoading}
+                    className="w-full py-3 px-6 bg-tesco-blue-primary text-tesco-white font-tesco-semibold rounded-tesco hover:bg-tesco-blue-secondary transition disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {isLoading ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               )}
