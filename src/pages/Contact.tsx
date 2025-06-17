@@ -112,7 +112,7 @@ const Contact = () => {
                   <div className="text-2xl mr-4">✉️</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">Support@drgaf.co.uk</p>
+                    <p className="text-gray-600">sales@drgaf.co.uk</p>
                     <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                   </div>
                 </div>
