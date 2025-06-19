@@ -60,16 +60,16 @@ const Footer = () => {
             <h3 className="text-tesco-lg font-tesco-semibold mb-4 text-tesco-white">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">Website Design</a>
+                <NavLink to="/services/website-design" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">Website Design</NavLink>
               </li>
               <li>
-                <a href="#" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">E-commerce Solutions</a>
+                <NavLink to="/services/ecommerce-solutions" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">E-commerce Solutions</NavLink>
               </li>
               <li>
-                <a href="#" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">SEO Optimization</a>
+                <NavLink to="/services/seo-optimization" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">SEO Optimization</NavLink>
               </li>
               <li>
-                <a href="#" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">Website Maintenance</a>
+                <NavLink to="/services/website-maintenance" className="text-tesco-base text-tesco-gray-light hover:text-tesco-white transition-colors font-tesco-normal">Website Maintenance</NavLink>
               </li>
             </ul>
           </div>
